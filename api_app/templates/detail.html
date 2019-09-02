@@ -1,0 +1,18 @@
+<h1>Name: {{r.species.name}}</h1>
+<h3>Height: {{r.height}}</h3>
+
+<h1>ABILITIES:</h1>
+{%for result in r.abilities%}
+<ol>
+	<li>{{result.ability.name}}</li>
+</ol>
+{%endfor%}
+
+
+<h1>TYPES:</h1>
+{%for result in r.types%}
+<ol>
+	<li>{{result.type.name}}</li>
+</ol>
+{%endfor%}
+
